@@ -1,0 +1,16 @@
+
+TODO:
+[x] bilinear filtering
+    [ ] make it fast enough
+[ ] try out morton-code / bit-interleaving
+[x] preetham sky (make lookup table?)
+    [ ] get rid of SDL_MapRgb or something
+    [ ] make a diffuse lookup for ambient lighting
+[ ] optimize it all again
+
+
+
+Using normal indexing into skymap and heightmap: 10.72 fps
+Using morton indexing into skymap and heightmap: 11.52 fps
+Removed union in float4_ ..................... : 12.30 fps
+Removed union in uint4_ ...................... : 12.21 fps
